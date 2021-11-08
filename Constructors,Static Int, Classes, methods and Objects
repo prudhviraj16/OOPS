@@ -1,0 +1,75 @@
+package com.PRUDHVI;
+public class Main {
+
+    public static void main(String[] args) {
+        student s = new student();
+        student s1 = new student();
+        System.out.println(student.count);
+//        s1.works();
+//        s1.eats();
+//        System.out.println(s1.a);
+//        System.out.println(s1.name);
+//        s1.name = "prudish";
+//        s1.a = 20;
+//        s1.sleep();
+//        s1.code();
+//        System.out.println(s1.name+" "+s1.a);
+//        student s2 = new student(234);
+//        s2.name = "rajah";
+//        s2.a = 90;
+//        System.out.println(s2.a);
+//        System.out.println(s2.name+" "+s2.a);
+//        Default d = new Default();
+//        System.out.println(d.name);
+//        System.out.println(d.a);
+//        System.out.println(d.b);
+//        System.out.println(d.c);
+    }
+     static class student
+    {
+        String name;
+        int a=10123456;
+        static int count=0;
+        public student()
+        {
+            a = 2345678;
+            name = "jklhjkl;";
+            count++;
+//            System.out.println(count);
+//            System.out.println(a+" I am default constructor");
+        }
+        public student(int id)
+        {
+//          a=id;
+            count++;
+//            System.out.println(count);
+//            System.out.println(" I am parametrized constructor");
+        }
+//        static void works()
+//        {
+//            System.out.println(name + " working");
+//        }
+//        void eats()
+//        {
+//            System.out.println(a+" eating");
+//        }
+//        void sleep()
+//        {
+//            System.out.println(name+" sleeps");
+//        }
+//        void code()
+//        {
+//            if(a<10)
+//                System.out.println("coding");
+//            else
+//                System.out.println("stubborn");
+//        }
+    }
+//    static class Default
+//    {
+//        String name;
+//        int a;
+//        boolean b;
+//        char c;
+//    }
+}
