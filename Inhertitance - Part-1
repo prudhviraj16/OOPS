@@ -1,0 +1,40 @@
+package com.PRUDHVI;
+public class Main {
+    public static void main(String[] args) {
+//        Human h = new Human();
+//        h.age =23;
+//        System.out.println(h.age);
+//        student s = new student();
+//        s.age = 345678;
+//        System.out.println(s.age);
+        
+    }
+    static class Mutants{
+        int age;
+        public Mutants() {
+            this.age= 0;
+        }
+        public Mutants(int age) {
+            this.age=age;
+        }
+        void walks() {
+            System.out.println("human's");
+        }
+    }
+//    static class Human {
+//        int age;
+//        public Human() {
+//            this.age= 0;
+//        }
+//        public Human(int age) {
+//            this.age=age;
+//        }
+//        void walks() {
+//            System.out.println("human's");
+//        }
+//    }
+//     static class student extends Human {
+//         String name;
+//         int id ;
+//     }
+}
