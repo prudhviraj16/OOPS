@@ -1,0 +1,38 @@
+package com.PRUDHVI;
+public class Main {
+    public static void main(String[] args) {
+        B c = new B(6789);
+//        c.print();
+//        System.out.println(c.a);
+//         multi-level inheritance process from top to bottom
+    }
+    static class A {
+        int a = 123;
+        public A(){
+            System.out.println("Constructor inside A");
+        }
+        public A(int a){
+            System.out.println("parameterized Constructor inside A");
+        }
+    }
+        static class B extends A{
+        int a = 4444444;
+        void print()
+        {
+            System.out.println(super.a);
+            System.out.println(this.a);
+        }
+            public B() {
+                System.out.println("Constructor inside B");
+            }
+            public B(int a)
+            {
+                super(a);
+                System.out.println("parameterized constructor inside B");
+            }
+        }
+//        static class C extends B{
+//        public C(){
+//            System.out.println("Constructor inside C");
+//        }
+}
