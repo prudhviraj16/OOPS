@@ -1,0 +1,38 @@
+package com.PRUDHVI;
+public class Main {
+    public static void main(String[] args) {
+        Dancer d = new Dancer();
+        d.temp();
+    }
+}
+class X{
+    void grandfather()
+    {
+        System.out.println("I am the one whom you are supposed to be called");
+    }
+}
+    class Human extends X {
+        void works() {
+            System.out.println("Human works");
+        }
+        void call()
+        {
+            System.out.println("in call");
+            super.grandfather();
+
+        }
+    }
+    class Dancer extends Human {
+        void works() {
+            System.out.println("dancer dances");
+        }
+        void fun() {
+            works();
+            super.works();
+        }
+        void temp()
+        {
+            System.out.println(" in temp");
+            super.call();
+        }
+    }
