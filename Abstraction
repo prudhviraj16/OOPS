@@ -1,0 +1,32 @@
+package com.PRUDHVI;
+import Raj.nice;
+public class Main extends nice{
+    public static void main(String[] args) {
+        Dancer d = new Dancer();
+        d.works();
+        d.eats();
+        Teacher t = new Teacher();
+        t.works();
+        t.eats();
+    }
+}
+abstract class Human{
+    abstract void works();
+    abstract void eats();
+}
+class Dancer extends Human{
+    void works() {
+        System.out.println("working");
+    }
+    void eats(){
+        System.out.println("eating");
+    }
+}
+class Teacher extends Human{
+    void works(){
+        System.out.println("working");
+    }
+    void eats(){
+        System.out.println("eating");
+    }
+}
